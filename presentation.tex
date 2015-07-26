@@ -107,42 +107,6 @@ Supervisor: Dr. habil. Rudolph Triebel}
 }
 
 \section{Implementation}
-\frame{
-\frametitle{Milestones}
-
-\begin{figure}[t]
-\centering
-\vspace{2cm}
-\hspace{-3.8cm}\includegraphics[width=4.5cm,height=2.3cm]{andigp}
-
-\scriptsize{Figure 2: GP.}
-\label{fig4}
-\end{figure}
-}
-
-\frame{
-\frametitle{Implementation}
-
-\begin{itemize}
-	\item GP [Raphael Dümig, Dragomir Nikolic]
-	\begin{itemize}
-		\item library: GPc by Neil Lawrence$_{[4]}$
-		\item challenges:
-		\begin{itemize}
-			\item IVM supports online learning but does not accept single samples
-			\item training data with samples from a single class creates exceptions
-			\item IVM performs only a binary classification
-		\end{itemize}
-		\item solutions:
-		\begin{itemize}
-			\item buffer samples until there are enough samples
-			\item buffer samples until they belong to more than one class
-			\item train a separate IVM for each class
-		\end{itemize}
-	\end{itemize}
-\end{itemize}
-
-}
 
 \frame{
 \frametitle{Milestones}
@@ -195,6 +159,43 @@ Supervisor: Dr. habil. Rudolph Triebel}
 \end{figure}
 \end{column}
 \end{columns}
+
+}
+
+\frame{
+\frametitle{Milestones}
+
+\begin{figure}[t]
+\centering
+\vspace{2cm}
+\hspace{-3.8cm}\includegraphics[width=4.5cm,height=2.3cm]{andigp}
+
+\scriptsize{Figure 2: GP.}
+\label{fig4}
+\end{figure}
+}
+
+\frame{
+\frametitle{Implementation}
+
+\begin{itemize}
+	\item GP [Raphael Dümig, Dragomir Nikolic]
+	\begin{itemize}
+		\item library: GPc by Neil Lawrence$_{[4]}$
+		\item challenges:
+		\begin{itemize}
+			\item IVM supports online learning but does not accept single samples
+			\item training data with samples from a single class creates exceptions
+			\item IVM performs only a binary classification
+		\end{itemize}
+		\item solutions:
+		\begin{itemize}
+			\item buffer samples until there are enough samples
+			\item buffer samples until they belong to more than one class
+			\item train a separate IVM for each class
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
 
 }
 
