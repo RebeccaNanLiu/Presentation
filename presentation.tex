@@ -176,13 +176,10 @@ Supervisor: Dr. habil. Rudolph Triebel}
 \frametitle{Implementation}
 
 \begin{itemize}
-\item Combining GP with online RDF
-\begin{itemize}
-\item Challenge 1:  when to train GP?
-\item Solution:  buffer
-\item Challenge 2:  multiclassification?
-\item Solution:  train n GPCs for each leaf node
-\end{itemize}
+	\item Combining GP with online RDF
+	\begin{itemize}
+		\item use GPs in a node if it is at the maximum depth of a decision tree
+	\end{itemize}
 \end{itemize}
 }
 
