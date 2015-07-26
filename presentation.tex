@@ -124,8 +124,8 @@ Supervisor: Dr. habil. Rudolph Triebel}
 \frametitle{Implementation}
 
 \begin{itemize}
-\item programming language: C++
-\item development environment: Ubuntu \ldots
+\item language: C++
+\item IDE : Ubantu ......
 \end{itemize}
 
 }
@@ -135,7 +135,7 @@ Supervisor: Dr. habil. Rudolph Triebel}
 \frametitle{Implementation}
 
 \begin{itemize}
-\item GP [Raphael Dragomir]
+\item GP [Raphael Dümig, Dragomir Nikolic]
 \begin{itemize}
 \item library:
 \item challenge:
@@ -149,28 +149,40 @@ Supervisor: Dr. habil. Rudolph Triebel}
 \frame{
 \frametitle{Implementation}
 
+\begin{itemize}
+\item  RDF [Andreas Wiedemann, Nan Liu]
+\begin{itemize}
+\item OpenCV library\ \ \ \ off-line version
+\item Amir Saffari [3]\ \ \ \ \ on-line version
+\end{itemize}
+\end{itemize}
+}
+\frame{
+\frametitle{Implementation}
 \begin{columns}[t]
 \begin{column}{0.5\linewidth}
-\begin{itemize}
-\item  RDF [Andreas Nan]
-\begin{itemize}
-\item OpenCV library, faild! 
-\item Challenge: online version
-\item Solution: Open source code from Amir Saffari et.al.[3]
-\end{itemize}
-\end{itemize}
+\begin{figure}[t]
+\centering
+\vspace{2cm}
+\hspace{-2cm}\includegraphics[width=2cm,height=3cm]{rdfalg}
+
+\scriptsize{Figure 2: Online RDF algorithm$_{[3]}$.}
+\label{fig2}
+\end{figure}
 \end{column}
 
 \begin{column}{0.5\linewidth}
 \begin{figure}[t]
 \centering
+\vspace{2cm}
 \hspace{-2.8cm}\includegraphics[width=3cm,height=1.5cm]{rdf_perf_onoff}
 
-\scriptsize{Figure 2: Classification error with respect to the ratio of labeled samples for off-line and on-line training with increasing number of training samples$_{[3]}$.}
-\label{fig2}
+\scriptsize{Figure 3: Classification error with respect to the ratio of labeled samples for off-line and on-line training with increasing number of training samples$_{[3]}$.}
+\label{fig3}
 \end{figure}
 \end{column}
 \end{columns}
+
 }
 
 %\section{Implementation}
@@ -211,8 +223,65 @@ Supervisor: Dr. habil. Rudolph Triebel}
 \begin{itemize}
 \item Data: RGB-D Dataset$_{[2]}$ 
 \end{itemize}
+% GNUPLOT: LaTeX picture
+\setlength{\unitlength}{0.240900pt}
+\ifx\plotpoint\undefined\newsavebox{\plotpoint}\fi
+\sbox{\plotpoint}{\rule[-0.200pt]{0.400pt}{0.400pt}}%
+\begin{picture}(1181,590)(0,0)
+\sbox{\plotpoint}{\rule[-0.200pt]{0.400pt}{0.400pt}}%
+\put(110.0,82.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(90,82){\makebox(0,0)[r]{$0$}}
+\put(1100.0,82.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(110.0,159.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(90,159){\makebox(0,0)[r]{$0.2$}}
+\put(1100.0,159.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(110.0,236.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(90,236){\makebox(0,0)[r]{$0.4$}}
+\put(1100.0,236.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(110.0,312.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(90,312){\makebox(0,0)[r]{$0.6$}}
+\put(1100.0,312.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(110.0,389.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(90,389){\makebox(0,0)[r]{$0.8$}}
+\put(1100.0,389.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(110.0,466.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(90,466){\makebox(0,0)[r]{$1$}}
+\put(1100.0,466.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(278.0,82.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(278,41){\makebox(0,0){RDF}}
+\put(278.0,446.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(615.0,82.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(615,41){\makebox(0,0){RDF-GP}}
+\put(615.0,446.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(952.0,82.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(952,41){\makebox(0,0){GP}}
+\put(952.0,446.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(110.0,82.0){\rule[-0.200pt]{0.400pt}{92.506pt}}
+\put(110.0,82.0){\rule[-0.200pt]{243.309pt}{0.400pt}}
+\put(1120.0,82.0){\rule[-0.200pt]{0.400pt}{92.506pt}}
+\put(110.0,466.0){\rule[-0.200pt]{243.309pt}{0.400pt}}
+\put(615,528){\makebox(0,0){Accuracies of classifiers}}
+\put(194,82){\rule{40.953pt}{30.8352pt}}
+\put(194.0,82.0){\rule[-0.200pt]{0.400pt}{30.594pt}}
+\put(194.0,209.0){\rule[-0.200pt]{40.712pt}{0.400pt}}
+\put(363.0,82.0){\rule[-0.200pt]{0.400pt}{30.594pt}}
+\put(531,82){\rule{40.7121pt}{47.4573pt}}
+\put(194.0,82.0){\rule[-0.200pt]{40.712pt}{0.400pt}}
+\put(531.0,82.0){\rule[-0.200pt]{0.400pt}{47.216pt}}
+\put(531.0,278.0){\rule[-0.200pt]{40.471pt}{0.400pt}}
+\put(699.0,82.0){\rule[-0.200pt]{0.400pt}{47.216pt}}
+\put(868,82){\rule{40.7121pt}{65.043pt}}
+\put(531.0,82.0){\rule[-0.200pt]{40.471pt}{0.400pt}}
+\put(868.0,82.0){\rule[-0.200pt]{0.400pt}{64.802pt}}
+\put(868.0,351.0){\rule[-0.200pt]{40.471pt}{0.400pt}}
+\put(1036.0,82.0){\rule[-0.200pt]{0.400pt}{64.802pt}}
+\put(868.0,82.0){\rule[-0.200pt]{40.471pt}{0.400pt}}
+\put(110.0,82.0){\rule[-0.200pt]{0.400pt}{92.506pt}}
+\put(110.0,82.0){\rule[-0.200pt]{243.309pt}{0.400pt}}
+\put(1120.0,82.0){\rule[-0.200pt]{0.400pt}{92.506pt}}
+\put(110.0,466.0){\rule[-0.200pt]{243.309pt}{0.400pt}}
+\end{picture}
 
-\input{accuracies.tex}
 
 }
 
