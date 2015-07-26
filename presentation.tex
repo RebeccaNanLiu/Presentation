@@ -116,22 +116,30 @@ Supervisor: Dr. habil. Rudolph Triebel}
 
 }
 
-%\section{Implementation}
 \frame{
 \frametitle{Implementation}
 
 \begin{itemize}
-\item GP [Raphael Dümig, Dragomir Nikolic]
-\begin{itemize}
-\item library:
-\item challenge:
-\item solutions:
-\end{itemize}
+	\item GP [Raphael Dümig, Dragomir Nikolic]
+	\begin{itemize}
+		\item library: GPc by Neil Lawrence$_{[4]}$
+		\item challenges:
+		\begin{itemize}
+			\item IVM supports online learning but does not accept single samples
+			\item training data with samples from a single class creates exceptions
+			\item IVM performs only a binary classification
+		\end{itemize}
+		\item solutions:
+		\begin{itemize}
+			\item buffer samples until there are enough samples
+			\item buffer samples until they belong to more than one class
+			\item train a separate IVM for each class
+		\end{itemize}
+	\end{itemize}
 \end{itemize}
 
 }
 
-%\section{Implementation}
 \frame{
 \frametitle{Implementation}
 
@@ -220,6 +228,8 @@ Supervisor: Dr. habil. Rudolph Triebel}
 		\centering
 		\input{training_times.tex}
 	\end{minipage}
+
+	\scriptsize{results for 200 training and 100 testing samples}
 \end{figure}
 
 }
@@ -265,13 +275,17 @@ Supervisor: Dr. habil. Rudolph Triebel}
 	\bibliography{bibliography} 
 \begin{thebibliography}{99}
 \bibitem{1}
-B. Fröhlich, E. Rodner, M. Kemmler, and J. DenzlerI,	 “Large-Scale Gaussian Process Classification Using Random Decision Forests, ” ISSN 1054-6618, Pattern Recognition and Image Analysis, 2012, Vol. 22, No. 1, pp. 113–120, 2012. 
+B. Fröhlich, E. Rodner, M. Kemmler, and J. Denzler,	 “Large-Scale Gaussian Process Classification Using Random Decision Forests, ” ISSN 1054-6618, Pattern Recognition and Image Analysis, 2012, Vol. 22, No. 1, pp. 113–120, 2012.
 
 \bibitem{2}
 Kevin Lai, Liefeng Bo, Xiaofeng Ren, and Dieter Fox.  A Large-Scale Hierarchical Multi-View RGB-D Object Dataset. http://rgbd-dataset.cs.washington.edu
 
 \bibitem{3}
 Amir Saffari, Christian Leistner, Jakob Santner, Martin Godec, and Horst Bischof, "On-line Random Forests," 3rd IEEE ICCV Workshop on On-line Computer Vision, 2009.
+
+\bibitem{4}
+Neil Lawrence. Github repository of GPc -- opened on 26. July 2015: https://github.com/SheffieldML/GPc
+
 \end{thebibliography}
 }
 
