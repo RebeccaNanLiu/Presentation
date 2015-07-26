@@ -63,7 +63,7 @@ Supervisor: Dr. habil. Rudolph Triebel}
 \begin{column}{0.65\linewidth}
 \begin{figure}[t]
 \centering
-
+\vspace{1.5cm}
 \begin{center}
 \hspace{-3cm}\includegraphics[width=3cm,height=1cm]{time}
 \end{center}
@@ -94,6 +94,7 @@ Supervisor: Dr. habil. Rudolph Triebel}
 
 \begin{column}{0.5\linewidth}
 \begin{figure}[t]
+\vspace{1.5cm}
 \centering
 \hspace{-2.5cm}\includegraphics[width=0.5\linewidth]{fig1}
 
@@ -106,6 +107,18 @@ Supervisor: Dr. habil. Rudolph Triebel}
 }
 
 \section{Implementation}
+\frame{
+\frametitle{Milestones}
+
+\begin{figure}[t]
+\centering
+\vspace{2cm}
+\hspace{-3.8cm}\includegraphics[width=4.5cm,height=2.7cm]{andigp}
+
+\scriptsize{Figure 2: GP.}
+\label{fig4}
+\end{figure}
+}
 
 \frame{
 \frametitle{Implementation}
@@ -132,12 +145,27 @@ Supervisor: Dr. habil. Rudolph Triebel}
 }
 
 \frame{
+\frametitle{Milestones}
+
+\begin{figure}[t]
+\centering
+\vspace{2cm}
+\hspace{-3.8cm}\includegraphics[width=4.5cm,height=2.7cm]{andirdf}
+
+\scriptsize{Figure 3: RDF.}
+\label{fig4}
+\end{figure}
+}
+
+\frame{
 \frametitle{Implementation}
 
 \begin{itemize}
 \item  RDF [Andreas Wiedemann, Nan Liu]
+\vspace{0.5cm}
 \begin{itemize}
 \item OpenCV library\ \ \ \ off-line version
+\vspace{0.5cm}
 \item Amir Saffari [3]\ \ \ \ \ on-line version
 \end{itemize}
 \end{itemize}
@@ -151,7 +179,7 @@ Supervisor: Dr. habil. Rudolph Triebel}
 \vspace{2cm}
 \hspace{-2cm}\includegraphics[width=2cm,height=3cm]{rdfalg}
 
-\scriptsize{Figure 2: Online RDF algorithm$_{[3]}$.}
+\scriptsize{Figure 4: Online RDF algorithm$_{[3]}$.}
 \label{fig2}
 \end{figure}
 \end{column}
@@ -162,7 +190,7 @@ Supervisor: Dr. habil. Rudolph Triebel}
 \vspace{2cm}
 \hspace{-2.8cm}\includegraphics[width=3cm,height=1.5cm]{rdf_perf_onoff}
 
-\scriptsize{Figure 3: Classification error with respect to the ratio of labeled samples for off-line and on-line training with increasing number of training samples$_{[3]}$.}
+\scriptsize{Figure 5: Classification error with respect to the ratio of labeled samples for off-line and on-line training with increasing number of training samples$_{[3]}$.}
 \label{fig3}
 \end{figure}
 \end{column}
@@ -170,10 +198,25 @@ Supervisor: Dr. habil. Rudolph Triebel}
 
 }
 
+\frame{
+\frametitle{Milestones}
+
+\begin{figure}[t]
+\centering
+\vspace{2cm}
+\hspace{-3.8cm}\includegraphics[width=4.5cm,height=2.7cm]{andicombi}
+
+\scriptsize{Figure 6: Combination of GP and on-line RDF.}
+\label{fig4}
+\end{figure}
+}
 
 %\section{Implementation}
 \frame{
 \frametitle{Implementation}
+
+\begin{columns}[t]
+\begin{column}{0.5\linewidth}
 
 \begin{itemize}
 	\item Combining GP with online RDF
@@ -181,22 +224,22 @@ Supervisor: Dr. habil. Rudolph Triebel}
 		\item use GPs in a node if it is at the maximum depth of a decision tree
 	\end{itemize}
 \end{itemize}
-}
 
-\section{Milestones}
-\frame{
-\frametitle{Milestones}
+\end{column}
 
+\begin{column}{0.5\linewidth}
 \begin{figure}[t]
+\vspace{1.5cm}
 \centering
-\vspace{2cm}
-\hspace{-3.8cm}\includegraphics[width=4.5cm,height=2.7cm]{andi}
+\hspace{-2.5cm}\includegraphics[width=0.5\linewidth]{fig1}
 
-\scriptsize{Figure 4: Online RDF algorithm.}
-\label{fig4}
+%\vspace{0.5cm}
+\scriptsize{Figure 1: RDF is used to cluster the data in a supervised manner and a GP classifier is used to separate classes in each leaf$_{[1]}$.}
+\label{fig1}
 \end{figure}
+\end{column}
+\end{columns}
 }
-
 
 \section{Experiments and Evaluation}
 \frame{
@@ -230,16 +273,16 @@ Supervisor: Dr. habil. Rudolph Triebel}
 \begin{itemize}
 \item Our Contributions:
 \begin{itemize}
-\item combined GP and RDF
-\item implemented online version
-\item obtained multi classifier
+\item combined on-line GP and on-line RDF
+\item extended existing user interface
+\item implemented multi-classifier
 \end{itemize}
 \end{itemize}
 
 \begin{itemize}
 \item Advantages:
 \begin{itemize}
-\item good accuracy maintained
+\item good accuracy obtained
 \item substantially faster than the full GP classifier
 \end{itemize}
 \end{itemize}
@@ -249,7 +292,7 @@ Supervisor: Dr. habil. Rudolph Triebel}
 \item Future Work:
 \begin{itemize}
 \item parameter optimization 
-\item used for large data set
+\item application on large data set
 \item using GPU for speed optimization
 \item feature selection (PCA)
 \end{itemize}
